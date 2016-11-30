@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- Name Label -->
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="10dip"
+        android:text="Source"
+        android:textSize="17dip" />
+
+    <!-- Input Name -->
+
+
+    <!-- Price Label -->
+
+    <TextView
+        android:id="@+id/hsource"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="10dip"
+        android:text="Destination"
+        android:textSize="17dip" />
+
+    
+
+    <TextView
+        android:id="@+id/hdestination"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="10dip"
+        android:text="Date"
+        android:textSize="17dip" />
+
+   
+
+    <TextView
+        android:id="@+id/hdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+    
+    
+    
+    
+     <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="10dip"
+        android:text="Email"
+        android:textSize="17dip" />
+
+   
+
+    <TextView
+        android:id="@+id/hemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+    
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="10dip"
+        android:text="No. of Seats"
+        android:textSize="17dip" />
+
+   
+
+    <TextView
+        android:id="@+id/hseats"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+     
+         
+    
+     <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="10dip"
+        android:text="Time"
+        android:textSize="17dip" />
+
+   
+
+    <TextView
+        android:id="@+id/htime"
+        android:layout_width="match_parent"
+         
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+    
+    
+   
+    
+   
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <!-- Button Create Product -->
+
+        <!-- Button Create Product -->
+
+        <Button
+            android:id="@+id/btnhok"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="38dp"
+            android:background="#00ffff"
+            android:text="Ok" />
+
+        <Button
+            android:id="@+id/btnhdelete"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="30dp"
+            android:background="#00ffff"
+            android:text="Delete" />
+
+    </RelativeLayout>
+
+</LinearLayout>

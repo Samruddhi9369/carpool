@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/fromlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp"
+        android:background="#00ffff"
+        android:clickable="true" >
+
+        <TextView
+            android:id="@+id/from"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:editable="false"
+            android:gravity="left"
+            android:text="From"
+            android:textSize="20dp"
+            android:textStyle="" />
+        
+        <TextView
+            android:id="@+id/fromplace"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:editable="false"
+            android:gravity="right"
+            
+            android:textSize="20dp"
+            android:textStyle="" />
+
+        
+
+            <!-- Spinner Element -->
+ 
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:prompt="@string/spinner_title"
+            android:text="School" />
+
+        <Spinner
+            android:id="@+id/spinnerplaces"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:prompt="@string/spinner_title2"
+            android:text="Places" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/tolayout"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="100dp"
+        android:background="#00ffff"
+        android:clickable="true" >
+
+        <TextView
+            android:id="@+id/to"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:gravity="left"
+            android:text="To"
+            android:textSize="20dp"
+            android:textStyle="" />
+        
+        <TextView
+            android:id="@+id/fromplace"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:editable="false"
+            android:gravity="right"
+            
+            android:textSize="20dp"
+            android:textStyle="" />
+
+        
+
+            <!-- Spinner Element -->
+ 
+
+        <Spinner
+            android:id="@+id/spinnerto"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:prompt="@string/spinner_title"
+            android:text="School" />
+
+        <Spinner
+            android:id="@+id/spinnerplacesto"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:prompt="@string/spinner_title2"
+            android:text="Places" />
+        
+        
+        
+        
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tolayout"
+        android:layout_marginTop="20dp" >
+        
+        <TextView
+            android:id="@+id/textViewDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="Enter Date: "
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <RadioGroup
+            android:id="@+id/radiogrp"
+            android:layout_width="500dp"
+            android:layout_height="75dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textViewDate"
+            android:gravity="left"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/dailypool"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Dailypool"
+                android:textSize="11dp" />
+
+            <RadioButton
+                android:id="@+id/today"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Today"
+                android:textSize="11dp" />
+
+            <RadioButton
+                android:id="@+id/Tom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tomorrow"
+                android:textSize="11dp" />
+
+            <RadioButton
+                android:id="@+id/OtherDate"
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:layout_toRightOf="@+id/Tom"
+                android:text="Other"
+                android:textSize="11dp" />
+        </RadioGroup>
+
+    </RelativeLayout>
+
+
+
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/relativeLayout1"
+        android:text="Time:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/seekBar1"
+        android:orientation="horizontal" >
+<!-- 
+        <TextView
+            android:id="@+id/tvLabel1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="0" />
+
+        <TextView
+            android:id="@+id/tvLabel2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="45" />
+
+        <TextView
+            android:id="@+id/tvLabel3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingRight="10dp"
+            android:text="90" /> -->
+        
+    </RelativeLayout>
+
+    <!-- <SeekBar
+        android:id="@+id/seekBar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/time"
+        android:max="12"
+        android:progress="1" /> -->
+    
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true" >
+      
+
+    <TextView
+        android:id="@+id/type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/radiogrp2"
+        android:layout_alignParentLeft="true"
+        android:text="Type:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <RadioGroup
+        android:id="@+id/radiogrp2"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="53dp"
+        android:gravity="left"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/request"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Request"
+            android:textSize="11dp" />
+
+        <RadioButton
+            android:id="@+id/offer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Offer"
+            android:textSize="11dp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/searchbt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:background="#00ffff"
+        android:fitsSystemWindows="true"
+        android:gravity="center"
+        android:text="Search"
+        android:width="100dp" />
+
+    <Button
+        android:id="@+id/setTime"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/type"
+        android:layout_alignLeft="@+id/searchbt"
+        android:layout_marginBottom="16dp"
+        android:background="#00ffff"
+        android:text="Set the Time" />
+
+ </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgpic"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/pool1" />
+
+<TextView
+    android:id="@+id/helpreq2"
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:layout_below="@+id/helpreq1"
+    android:layout_marginLeft="15dp"
+    android:text="Search available rides"
+    android:textSize="20dp" />
+
+<TextView
+    android:id="@+id/helpreq3"
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:layout_alignLeft="@+id/helpreq2"
+    android:layout_below="@+id/helpreq2"
+    android:text="If you dont find rides we will get back to you as soon as ride becomes available"
+    android:textSize="20dp" />
+
+<TextView
+    android:id="@+id/req"
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    android:gravity="center"
+    android:text="Help"
+    android:textSize="20dp" />
+
+<TextView
+    android:id="@+id/helpreq1"
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:layout_alignLeft="@+id/helpreq2"
+    android:layout_below="@+id/req"
+    android:text="Enter details"
+    android:textSize="20dp" />
+
+<TextView
+    android:id="@+id/helpreq4"
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:layout_above="@+id/textView1"
+    android:layout_alignParentLeft="true"
+    android:layout_marginBottom="34dp"
+    android:text="Contact us at carpool.school@gmail.com"
+    android:textSize="20dp" />
+
+</RelativeLayout>

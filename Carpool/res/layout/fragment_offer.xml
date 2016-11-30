@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:id="@+id/fromlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp"
+        android:background="#00ffff"
+        android:clickable="true" >
+
+        <TextView
+            android:id="@+id/from1"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:editable="false"
+            android:gravity="left"
+            android:text="From"
+            android:textSize="20dp"
+            android:textStyle="" />
+
+            <!-- Spinner Element -->
+            
+            <Spinner
+                android:id="@+id/spinnerfrom1"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/from"
+                android:layout_toRightOf="@+id/from1"
+                android:gravity="right"
+                android:prompt="@string/spinner_title"
+                android:text="Select Source" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/tolayout"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="100dp"
+        android:background="#00ffff"
+        android:clickable="true" >
+
+        <TextView
+            android:id="@+id/to1"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:gravity="left"
+            android:text="To"
+            android:textSize="20dp"
+            android:textStyle="" />
+
+        
+
+            <!-- Spinner Element -->
+        
+        	 <Spinner
+        	     android:id="@+id/spinnerto1"
+        	     android:layout_width="fill_parent"
+        	     android:layout_height="40dp"
+        	     android:layout_alignParentRight="true"
+        	     android:layout_alignTop="@+id/to"
+        	     android:layout_toRightOf="@+id/to1"
+        	     android:gravity="right"
+        	     android:prompt="@string/spinner_title"
+        	     android:text="Select Destination" />
+        
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+        <Button
+            android:id="@+id/offerbt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#00ffff"
+            android:fitsSystemWindows="true"
+            android:gravity="center"
+            android:text="Offer"
+            android:width="100dp" />
+
+        <Button
+            android:id="@+id/timebt1"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:layout_above="@+id/spinnerseats1"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="15dp"
+            android:background="#00ffff"
+            android:gravity="center"
+            android:text="Set Time"
+            android:width="100dp" />
+
+        <TextView
+            android:id="@+id/seats1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/timebt1"
+            android:text="Number of seats:"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Spinner
+            android:id="@+id/spinnerseats1"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_above="@+id/offerbt"
+            android:layout_marginBottom="20dp"
+            android:layout_toRightOf="@+id/seats1"
+            android:gravity="right"
+            android:prompt="@string/spinner_title"
+            android:text="Seats" />
+
+        <TextView
+            android:id="@+id/textViewDate1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/datebt1"
+            android:layout_alignParentLeft="true"
+            android:text="Enter Date: "
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/time1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/timebt1"
+            android:layout_alignParentLeft="true"
+            android:text="Time:"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Button
+            android:id="@+id/datebt1"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:layout_above="@+id/time1"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="24dp"
+            android:background="#00ffff"
+            android:gravity="center"
+            android:text="Set Date"
+            android:width="100dp" />
+
+        
+
+    </RelativeLayout>
+
+</RelativeLayout>

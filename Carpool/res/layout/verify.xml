@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+     
+    android:background="@drawable/bgpic"
+    android:gravity="center"
+    android:orientation="vertical" >
+   
+    <!-- Email Label -->
+
+    <!-- Password Label -->
+
+    <!-- Error message -->
+
+    <!-- Login Button -->
+
+    <!-- Link to Login Screen -->
+
+    <TextView
+        android:id="@+id/register_error"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnVerify"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="32dp"
+        android:padding="10dip"
+        android:textColor="#e30000"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_weight="0.00"
+        android:background="@drawable/pool1" />
+
+    <Button
+        android:id="@+id/btnVerify"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/TextView01"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="49dp"
+        android:background="#709693"
+        android:text="Register" />
+
+    <EditText
+        android:id="@+id/verifyPin"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="51dp"
+        android:background="@drawable/username_bar1"
+        android:ems="10"
+        android:hint="Enter 4 digit Pin"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="3dp"
+        android:textColor="@android:color/black"
+        android:textSize="15dp" />
+
+</RelativeLayout>
